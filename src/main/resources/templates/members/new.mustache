@@ -1,0 +1,18 @@
+{{>layouts/header}}
+
+<!-- form 태그는 어디로 보낼지 action과 어떻게 보낼지 method로 이루어짐
+  method의 post는 컨트롤러에서 postMapping으로 받음 -->
+<form class="container" action="/join" method="post">
+    <div class="mb-3">
+        <label class="form-label">이메일</label>
+        <input type="email" class="form-control" name="email">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">비밀번호</label>
+        <input type="password" class="form-control" name="password">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <a href="/members">Back</a>
+</form>
+
+{{>layouts/footer}}
